@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://example.com/userDetailsService">
+  <soapenv:Body>
+    <web:getWeatherInfoResponse>
+      <web:weatherInfo>
+        <web:name>${weatherInfo.name}</web:name>
+        <web:currentTemperature>${weatherInfo.currentTemperature}</web:currentTemperature>
+        <web:windSpeed>${weatherInfo.windSpeed}</web:windSpeed>
+        <web:pressure>${weatherInfo.pressure}</web:pressure>
+        <web:humidity>${weatherInfo.humidity}</web:humidity>
+      </web:weatherInfo>
+    </web:getWeatherInfoResponse> 
+  </soapenv:Body>
+</soapenv:Envelope>
